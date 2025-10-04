@@ -119,7 +119,7 @@ PORT=5000
 4. Run server:
 
 ```bash
-npm run dev
+npm start
 ```
 
 ### Frontend
