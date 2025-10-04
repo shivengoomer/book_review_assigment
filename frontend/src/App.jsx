@@ -9,12 +9,14 @@ import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import NavBar from "./Navbar";
 import Profile from "./pages/Profile";
+import BackButton from "./components/BackButton";
 
 export default function App() {
   return (
     <AuthProvider>
       <BrowserRouter>
         <NavBar />
+        <BackButton/>
         <motion.main
           className="container-app py-6 min-h-[calc(100vh-4rem)]"
           initial={{ opacity: 0 }}

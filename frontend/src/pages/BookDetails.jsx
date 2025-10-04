@@ -31,7 +31,6 @@ function ReviewEditor({ bookId, onDone }) {
 
   return (
     <form onSubmit={submit} className="space-y-3">
-      <BackButton />
       {error && <div className="text-red-600">{error}</div>}
       <div>
         <label className="label">Rating</label>
