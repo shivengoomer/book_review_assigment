@@ -12,7 +12,6 @@ export default function Profile() {
 
   useEffect(() => {
     if (!user) return; // prevent fetch if user is not logged in
-    console.log("user details :", user);
 
     async function fetchData() {
       try {
@@ -72,7 +71,7 @@ export default function Profile() {
               >
                 <Link
                   to={`/books/${b._id}`}
-                  className="font-bold text-xl text-gray-900 hover:text-blue-600 transition"
+                  className="font-bold text-xl text-gray-900 hover:text-green-900 transition"
                 >
                   {b.title || "Untitled"}
                 </Link>
@@ -102,7 +101,7 @@ export default function Profile() {
               >
                 <Link
                   to={`/books/${r.bookId}`}
-                  className="font-semibold text-2xl text-blue-600 hover:underline"
+                  className="font-semibold text-2xl text-green-600 hover:underline"
                 >
                   {r.bookTitle || "Untitled Book"}
                 </Link>

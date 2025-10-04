@@ -21,20 +21,20 @@ export default function NavBar() {
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
           <Link
             to="/"
-            className="text-2xl sm:text-3xl font-extrabold tracking-tight text-gray-900 hover:text-blue-600 transition"
+            className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#8D0B41] hover:text-[#DF6D14] transition"
           >
-            Book<span className="text-blue-600">Reviews</span>
+            Book<span className="text-[#8D0B41] ">Reviews</span>
           </Link>
         </motion.div>
 
         {/* User Actions */}
-        
+
         <div className="flex items-center gap-4">
           {user ? (
             <>
               <Link
                 to="/profile"
-                className="font-semibold text-gray-800 hover:text-blue-600 transition"
+                className="font-semibold text-gray-800  transition"
               >
                 <span className="hidden sm:inline text-sm font-medium text-gray-800">
                   Hi, {user.name}
@@ -69,7 +69,7 @@ export default function NavBar() {
               >
                 <Link
                   to="/signup"
-                  className="px-5 py-2.5 rounded-full bg-blue-600 text-white shadow-md hover:bg-blue-700 transition font-medium"
+                  className="px-5 py-2.5 rounded-full bg-  yelloww-600 text-white shadow-md hover:bg-  yelloww-700 transition font-medium"
                 >
                   Signup
                 </Link>

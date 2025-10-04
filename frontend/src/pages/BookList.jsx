@@ -54,11 +54,11 @@ export default function BookList() {
         >
           <Link
             to="/books/new"
-            className="relative px-6 py-3 rounded-xl font-semibold text-white bg-emerald-500
-      shadow-lg hover:shadow-cyan-500/40 transition-all duration-300
+            className="relative px-6 py-3 rounded-xl font-semibold text-black bg-[#C2A68C]
+      shadow-lg hover:shadow-yellow-500/40 transition-all duration-300
       hover:-translate-y-1 hover:brightness-110"
           >
-            <span className="relative z-10">➕ Add New Book</span>
+            <span className="relative z-10 ">➕ Add New Book</span>
             <span className="absolute inset-0 rounded-xl  opacity-0 blur transition-all duration-500 group-hover:opacity-40"></span>
           </Link>
         </motion.div>
@@ -84,7 +84,7 @@ export default function BookList() {
             >
               <Link
                 to={`/books/${b._id}`}
-                className="text-2xl sm:text-2xl font-bold text-gray-900 hover:text-blue-600 transition"
+                className="text-2xl sm:text-2xl font-bold text-gray-900 hover:text-[#FF714B] transition"
               >
                 {b.title || (
                   <span className="italic text-gray-400">Untitled</span>
@@ -96,7 +96,7 @@ export default function BookList() {
                 {b.year || <span className="italic">Year?</span>}
               </div>
               <div className="mt-5 flex flex-wrap gap-3">
-                <span className="px-3 py-1 text-sm font-semibold rounded-full bg-blue-100 text-blue-700">
+                <span className="px-3 py-1 text-sm font-semibold rounded-full bg-[#532c22] text-white">
                   {b.genre || "Genre"}
                 </span>
                 <span className="px-3 py-1 text-sm font-semibold rounded-full bg-gray-100 text-gray-800">
