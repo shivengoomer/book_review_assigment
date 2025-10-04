@@ -4,7 +4,7 @@ import api from "../api/client.js";
 import ProtectedRoute from "../components/ProtectedRoute.jsx";
 import { useAuth } from "../context/AuthContext.jsx";
 import { Star } from "lucide-react";
-import BackButton from "../components/BackButton.jsx";
+import BackButton from "../components/backFunction.jsx";
 
 function ReviewEditor({ bookId, onDone }) {
   const [rating, setRating] = useState(0);

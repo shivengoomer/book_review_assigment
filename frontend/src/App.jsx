@@ -9,7 +9,7 @@ import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import NavBar from "./Navbar";
 import Profile from "./pages/Profile";
-import BackButton from "./components/BackButton";
+import BackButton from "./components/backFunction";
 
 export default function App() {
   return (
