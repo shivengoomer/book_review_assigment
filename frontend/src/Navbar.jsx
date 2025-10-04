@@ -17,7 +17,7 @@ export default function NavBar() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, type: "spring", stiffness: 120 }}
     >
-      <div className="container-app flex items-center justify-between px-6 py-1.5 mt-2">
+      <div className="container-app flex items-center justify-between px-6 py-3 mt-2">
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
           <Link
             to="/"
