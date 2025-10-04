@@ -16,7 +16,7 @@ export default function App() {
     <AuthProvider>
       <BrowserRouter>
         <NavBar />
-        <BackButton/>
+        <BackButton />
         <motion.main
           className="container-app py-6 min-h-[calc(100vh-4rem)]"
           initial={{ opacity: 0 }}
@@ -30,12 +30,7 @@ export default function App() {
             <Route path="/books/:id" element={<BookDetails />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/login" element={<Login />} />
-            <Route
-              path="/profile"
-              element={
-                  <Profile />
-              }
-            />
+            <Route path="/profile" element={<Profile />} />
           </Routes>
         </motion.main>
       </BrowserRouter>
