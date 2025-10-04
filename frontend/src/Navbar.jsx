@@ -34,7 +34,7 @@ export default function NavBar() {
             <>
               <Link
                 to="/profile"
-                className="font-semibold text-gray-800  transition"
+                className="font-semibold text-gray-800 transition"
               >
                 <span className="hidden sm:inline text-sm font-medium text-gray-800">
                   Hi, {user.name}
@@ -69,7 +69,7 @@ export default function NavBar() {
               >
                 <Link
                   to="/signup"
-                  className="px-5 py-2.5 rounded-full bg-  yelloww-600 text-white shadow-md hover:bg-  yelloww-700 transition font-medium"
+                  className="px-5 py-2.5 rounded-full bg-  yelloww-600 text-black shadow-md transition font-medium"
                 >
                   Signup
                 </Link>

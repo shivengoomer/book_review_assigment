@@ -1,11 +1,10 @@
-// components/BackButton.jsx
+
 import { useNavigate, useLocation } from "react-router-dom";
 
 export default function BackButton() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // Hide button on home page
   if (location.pathname === "/") return null;
 
   return (
